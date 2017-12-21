@@ -1,0 +1,35 @@
+What is Poky?
+  Poky: Poky is a "Reference distribution".
+
+What is Reference distribution?
+  Reference distribution: A `Distro` that provides a bitbake to compile All of your kernel,bootloader.and minimal packages for
+  rootfs.
+
+Examples: poky , yogurt, baryon,luv,luv-netboot,micro, oe-measured,yogurt-wayland e.g.,
+
+Bydefault yocto provides poky Distro.and this will have different versions. 
+Follow link for yocto versions "https://wiki.yoctoproject.org/wiki/Releases"
+
+you can create your own distro wirh reference to poky.
+examples: poky-atmel, poky-lsb, poky-tiny,poky-sota,poky-edison e.g.,
+
+yogurt is also a Distro like poky
+examples; yogurt-tiny, yogurt-vendor, yogurt-wayland. some people will take yougurt distro and create their own distros
+
+so some people will use poky distro and some people will use togurt ...etc.,
+
+After this distro you will create your own meta-layer for your board like phyboard-wega, wand board, beaglebone, Raspberry-pi,nitrogen boards, etc.,
+
+open-embedded core(meta-oe) is a main layer which gives more packages for your rootfs.
+examples: meta-network, meta-python, meta-ruby etc.,
+
+                                        YOCTO
+                           _______________|__________________
+                           |              |                  |
+                       Distro           Layers              Recipes
+                       poky         eg: meta-phytec       e.g: linux_version.bb
+                       yogurt           meta-acer               gcc_version.bb
+                       X11              meta-altera             uboot_version.bb
+                       wayland          meta-Qt5                fackroot_version.bb
+                       
+Note: follow link for all yocto DISTRO'S , LAYERS, RECIPES.
